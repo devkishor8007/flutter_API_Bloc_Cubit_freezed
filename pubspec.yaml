@@ -23,13 +23,14 @@ environment:
 dependencies:
   build_runner: ^2.1.1
   cupertino_icons: ^1.0.2
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
-  flutter_bloc:
-  freezed:
-  freezed_annotation:
+  flutter_bloc: null
+  freezed: null
+  freezed_annotation: null
   http: ^0.13.3
-  json_serializable:
+  json_serializable: null
 
 dev_dependencies:
   flutter_test:

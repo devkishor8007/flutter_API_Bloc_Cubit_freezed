@@ -11,7 +11,6 @@ class UnknownServiceImpl extends UnknownService {
   Future<List<Unknown>> getUnknown() async {
     var res = await http.get(Uri.parse("https://reqres.in/api/unknown"));
     if (res.statusCode == 200) {
-      print(res.body);
       final data = json.decode(res.body)['data'] as List;
       return List<Unknown>.from(data
           .map((json) => Unknown.fromJson(json as Map<String, dynamic>))
